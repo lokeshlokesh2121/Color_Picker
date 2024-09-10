@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        .bg_container{
+            height: 100vh;
+        }
+        .heading{
+            font-size: 50px;
+            font-family: "Roboto";
+        }
+        .button_1{
+            background-color: #e0e0e0;
+            width: 130px;
+            height:50px;
+            color:black;
+            font-weight: 700;
+        }
+        .button_2{
+            background-color: #6fcf92;
+            width: 130px;
+            height:50px;
+            color:black;
+            font-weight: 700;
+        }
+        .button_3{
+            background-color: #56ccf2;
+            width: 130px;
+            height:50px;
+            color:black;
+            font-weight: 700;
+        }
+        .button_4{
+            background-color:#bb6bd9;
+            width: 130px;
+            height:50px;
+            color:black;
+            font-weight: 700;
+        }
+        .back_ground_text{
+            background-color: black;
+            color: beige;
+            margin: 10px;
+            padding: 7px;
+
+        }
+        .para{
+            font-weight: bold;
+        }
+        .color_code{
+            font-size: 24px;
+        }
+
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="back_ground_element" class="bg_container text-center">
+                    <div>
+                        <h1 class="heading pt-5">Color Picker</h1>
+                    </div>
+                    <div class="mt-5">
+                        <button onclick="button1()" class="button_1 m-2">#e0e0e0</button>
+                        <button onclick="button2()" class="button_2 m-2">#6fcf97</button>
+                        <button onclick="button3()"class="button_3 m-2">#56ccf2</button>
+                        <button onclick="button4()" class="button_4 m-2">#bb6bd9</button>
+                    </div>
+                    <h2 class="back_ground_text">Background Color:<span id="colorcodeelement" class="color_code"></span></h2>
+                    <p class="para">Try clicking on one of the colors above to change the background color of this page!</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="color_picker_1.js"></script>
+</body>
+</html>
